@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Chat Me</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -13,7 +18,7 @@
         </div>
         <div class="navbar">
             <a href="#">Acceuil</a>
-            <a href="#">Historique</a>
+            <a href="#" class="active">Historique</a>
             <a href="#">Évènements</a>
             <a href="#">Contact</a>
         </div>
@@ -21,11 +26,11 @@
     <div class="main">
         <aside class="icon-profil">
             <ul>
-                <li><a><img src="img/.svg" alt="home">Fil d'actualité</a></li>
-                <li><a><img src="img/.svg" alt="message">Message</a></li>
-                <li><a><img src="img/.svg" alt="Évènements">Évènements</a></li>
-                <li><a><img src="img/ .svg" alt="Groupes">Groupes</a></li>
-                <li><a><img src="img/ .png" alt="home">Amis</a></li>
+                <li class="active"><a href="#"><img src="img/.svg" alt="home">Fil d'actualité</a></li>
+                <li><a  href="#"><img src="img/.svg" alt="message">Message</a></li>
+                <li><a href="#"><img src="img/.svg" alt="Évènements">Évènements</a></li>
+                <li><a href="#"><img src="img/ .svg" alt="Groupes">Groupes</a></li>
+                <li><a href="#"><img src="img/ .png" alt="home">Amis</a></li>
             </ul>
         </aside>
         <section class="post">
@@ -57,10 +62,10 @@
                 </div>
                 <div class="like-comment">
                     <div class="likes">
-                        <a href=""><img src="img/Vecto.png" alt="likes"><img src="img/Vector.png" alt="">likes</a>
+                        <a href="#" class="img"><img src="img/Vecto.png" alt="likes"><img src="img/Vector.png" alt="likes" ></a><a href="#" class="nbr-Likes">120 likes</a>
                     </div>
-                    <div class="comments">
-                        <a href="#"><img src="img/coment.png" alt="coment">Commentaires</a>
+                    <div class="coments">
+                        <a href="#" class="img"><img src="img/coment.png" alt="coment"></a><a href="#" class="nbr-coment">12 Commentaires</a>
                     </div>
                 </div>
             </div>
@@ -89,10 +94,10 @@
                 </div>
                 <div class="like-comment">
                     <div class="likes">
-                        <a href=""><img src="img/Vecto.png" alt="likes"><img src="img/Vector.png" alt="">likes</a>
+                        <a href="#" class="img"><img src="img/Vecto.png" alt="likes"><img src="img/Vector.png" alt="likes" ></a><a href="#" class="nbr-Likes">120 likes</a>
                     </div>
-                    <div class="comments">
-                        <a href="#"><img src="img/coment.png" alt="coment">Commentaires</a>
+                    <div class="coments">
+                        <a href="#" class="img"><img src="img/coment.png" alt="coment"></a><a href="#" class="nbr-coment">12 Commentaires</a>
                     </div>
                 </div>
             </div>
@@ -133,52 +138,39 @@
             </div>
             <div class="profil-2">
                 <h2>Suggestion</h2>
-                <hr>
                 <div class="pro-sugg">
                     <div class="pro-sugg-img"><img src="img/Rectangle.png" alt="Rectangle"></div>
                     <div class="pro-sugg-desc">
-                        <div>
                             <h3>Jhon Doe</h3>
                             <p>15 amis mutuels</p>
-                        </div>
-                        <div>
                             <a href="#"><img src="img/.svg" alt=""> Add friend</a>
-                        </div>
                     </div>
-                    <div class="pro-sugg">
-                        <div class="pro-sugg-img"><img src="img/Rectangle.png" alt="Rectangle"></div>
-                        <div class="pro-sugg-desc">
-                            <div>
-                                <h3>Jhon Doe</h3>
-                                <p>15 amis mutuels</p>
-                            </div>
-                            <div>
-                                <a href="#"><img src="img/.svg" alt=""> Add friend</a>
-                            </div>
-                        </div>
-                        <div class="pro-sugg">
+                </div>
+                <div class="pro-sugg">
                     <div class="pro-sugg-img"><img src="img/Rectangle.png" alt="Rectangle"></div>
                     <div class="pro-sugg-desc">
-                        <div>
                             <h3>Jhon Doe</h3>
                             <p>15 amis mutuels</p>
-                        </div>
-                        <div>
                             <a href="#"><img src="img/.svg" alt=""> Add friend</a>
-                        </div>
                     </div>
-                    <div class="pro-sugg">
-                        <div class="pro-sugg-img"><img src="img/Rectangle.png" alt="Rectangle"></div>
-                        <div class="pro-sugg-desc">
-                            <div>
-                                <h3>Jhon Doe</h3>
-                                <p>15 amis mutuels</p>
-                            </div>
-                            <div>
-                                <a href="#"><img src="img/.svg" alt=""> Add friend</a>
-                            </div>
-                        </div>
                 </div>
+                <div class="pro-sugg">
+                    <div class="pro-sugg-img"><img src="img/Rectangle.png" alt="Rectangle"></div>
+                    <div class="pro-sugg-desc">
+                            <h3>Jhon Doe</h3>
+                            <p>15 amis mutuels</p>
+                            <a href="#"><img src="img/.svg" alt=""> Add friend</a>
+                    </div>
+                </div>
+                <div class="pro-sugg">
+                    <div class="pro-sugg-img"><img src="img/Rectangle.png" alt="Rectangle"></div>
+                    <div class="pro-sugg-desc">
+                            <h3>Jhon Doe</h3>
+                            <p>15 amis mutuels</p>
+                            <a href="#"><img src="img/.svg" alt=""> Add friend</a>
+                    </div>
+                </div>
+
             </div>
         </aside>
     </div>

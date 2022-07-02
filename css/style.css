@@ -1,0 +1,267 @@
+html, body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background: #F5F5F5;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2C3E50;
+    padding: 22px 0px
+}
+.logo{
+    margin-left: 51px;
+}
+
+.logo a{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+}
+
+.navbar{
+    margin-right: 51px;
+}
+
+.navbar a{
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-left: 35px;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.67);
+    padding: 5px;
+}
+
+.navbar .active, .navbar a:hover{
+    color: #fff;
+    transition: color 0.5s ease-in-out;
+}
+
+.main{
+    display: flex;
+}
+
+.icon-profil{
+    flex: 1;
+    margin: 5px 30px 5px 51px;
+    animation: SliderDown3 5s;
+}
+.icon-profil ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.icon-profil li{
+    padding: 5px;
+}
+
+.icon-profil .active, .icon-profil li:hover{
+    width: 180px;
+    border: 1px solid #DBDBDB;
+    background: #fff;
+    border-radius: 5px;
+    transition: background 0.5s ease-in-out;
+    
+}
+.icon-profil .active a{
+    font-weight: 700;
+    color: #000;
+}
+
+.icon-profil img{
+    padding-left: 9px;
+    padding-right: 24.2px;
+}
+.icon-profil a{
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.67);
+}
+
+.post{
+    flex: 2;
+    margin: 21px 30px 5px 0px;
+}
+.post-1, .post-2, .post-3{
+    display: block;
+    margin-bottom: 15px;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+    animation: SliderDown 5s;
+}
+
+.header-post{
+    display: flex;
+}
+.header-post .header-photo-profile{
+    margin: 15px 12px;
+}
+
+.header-photo-profile img{
+    border-radius: 50%;
+}
+
+.header-photo-desc h1{
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+.header-photo-desc p{
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.38);
+}
+.post-desc{
+    margin: 14px 9px 17px 11px;
+}
+.post-desc p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.6;
+}
+
+.post-desc p:first-child{
+    margin-bottom: 23px;
+}
+.like-comment{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #DBDBDB;
+    padding: 11px;
+    position: relative;
+}
+.likes img{
+    position: absolute;
+}
+.likes img:first-child{
+    top: 18px;
+    left: 11px
+}
+.likes img:nth-child(2){
+    left: 16px;
+}
+
+.nbr-Likes, .nbr-coment{
+    font-size: 12px;
+    color: #BDBDBD;
+}
+.nbr-Likes{
+    position: absolute;
+    top: 13px;
+    left: 35px;
+}
+.coments img{
+    position: absolute;
+    top: 15px;
+    right: 112px;
+}
+
+
+.profil-suggest{
+    flex: 2;
+    margin: 21px 51px 0px 0px;
+}
+
+.profil-1, .profil-2{
+    display: block;
+    width: 310px;
+    animation: SliderDown2 5s;
+}
+
+.profil-1{
+    height: 183px;
+    height: 14;
+    margin-bottom: 30px;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+}
+.profil-1 p{
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 15px 13px 11px;
+    line-height: 21px;
+    color: #BDBDBD;
+
+}
+
+.profil-2 h2{
+    font-weight: 700;
+    font-size: 1rem;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #000;
+}
+
+.pro-sugg{
+   display: flex; 
+}
+
+.pro-sugg-desc h3{
+    margin: 0;
+    font-weight: 700;
+    font-size: 15px;
+    padding-left: 11px;
+}
+
+.pro-sugg-desc p{
+    margin: 9px 0 9px 0;
+    padding-left: 11px;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.pro-sugg-desc a{
+    margin-left: 11px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+}
+.pro-sugg-desc img{
+    padding-right: 3px;
+}
+
+
+@keyframes SliderDown {
+    0%{
+        transform: translateY(400px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes SliderDown2 {
+    0%{
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes SliderDown3 {
+    0%{
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
